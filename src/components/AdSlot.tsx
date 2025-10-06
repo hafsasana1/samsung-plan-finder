@@ -3,7 +3,7 @@ import { useEffect } from "react";
 interface AdSlotProps {
   id: string;
   className?: string;
-  size?: "header" | "standard";
+  size?: "header" | "standard" | "medium";
 }
 
 const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
@@ -21,6 +21,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
   }, []);
 
   const isHeaderAd = size === "header" || id.includes("top-ad");
+  const isMediumAd = size === "medium";
   
   if (isHeaderAd) {
     return (
@@ -36,6 +37,27 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
             style={{ display: "inline-block", width: "970px", height: "250px", maxWidth: "100%" }}
             data-ad-client="ca-pub-3633046559958303"
             data-ad-slot="970250"
+            data-tag-src="gamtg"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  if (isMediumAd) {
+    return (
+      <div 
+        id={id}
+        className={`ad-slot w-full flex items-center justify-center py-4 ${className}`}
+        role="complementary"
+        aria-label="Advertisement"
+      >
+        <div className="w-full max-w-[300px] overflow-hidden flex justify-center">
+          <ins 
+            className="adsbygoogle"
+            style={{ display: "inline-block", width: "300px", height: "250px" }}
+            data-ad-client="ca-pub-3633046559958303"
+            data-ad-slot="300250"
             data-tag-src="gamtg"
           />
         </div>

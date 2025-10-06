@@ -20,55 +20,40 @@ const Index = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-subtle py-20 md:py-32">
+        <section className="relative overflow-hidden bg-gradient-subtle py-8 md:py-12">
           <div className="container">
-            <div className="mx-auto max-w-5xl text-center">
+            <div className="mx-auto max-w-4xl text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
-                  <Shield className="h-5 w-5 text-primary" />
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+                  <Shield className="h-4 w-4 text-primary" />
                   <span className="text-sm font-medium text-primary">Samsung Device Protection</span>
                 </div>
                 
-                <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl">
+                <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
                   Find the Best Samsung Care+ Insurance & Device Protection Plan
                 </h1>
                 
-                <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
+                <p className="mb-6 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
                   Compare Samsung Care+, carrier insurance plans, and third-party device protection providers. 
                   Get personalized Galaxy smartphone insurance recommendations and accurate cost estimates for screen repair coverage, 
                   theft protection, and mechanical breakdown insurance in under 2 minutes.
                 </p>
                 
-                <div className="flex flex-wrap gap-4 justify-center mb-8">
+                <div className="flex flex-wrap gap-3 justify-center">
                   <Link to="/model">
-                    <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" data-testid="button-start-quiz">
+                    <Button size="default" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" data-testid="button-start-quiz">
                       Calculate Insurance Costs →
                     </Button>
                   </Link>
                   <Link to="/tips">
-                    <Button size="lg" variant="outline" data-testid="link-view-guide">
+                    <Button size="default" variant="outline" data-testid="link-view-guide">
                       View Complete Guide
                     </Button>
                   </Link>
-                </div>
-
-                <div className="grid gap-4 md:grid-cols-3 max-w-3xl mx-auto text-sm">
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-muted-foreground">Compare 15+ insurance providers</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-muted-foreground">Save up to $300/year on premiums</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center">
-                    <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-muted-foreground">Latest pricing & deductible data</span>
-                  </div>
                 </div>
               </motion.div>
             </div>

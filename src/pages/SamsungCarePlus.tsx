@@ -41,7 +41,7 @@ const SamsungCarePlus = () => {
               Samsung Care+ Premium Device Protection
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Official Samsung insurance protection plan with same-day replacement, expert repairs, and comprehensive coverage for Galaxy devices in 2025
+              Official Samsung insurance protection plan with same-day replacement, expert repairs, and comprehensive coverage for Galaxy devices
             </p>
           </div>
 
@@ -71,10 +71,10 @@ const SamsungCarePlus = () => {
           <div className="mb-8 rounded-xl bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 border border-primary/30 p-8 shadow-xl">
             <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center gap-3">
               <Award className="h-8 w-8 text-primary" />
-              Why Choose Samsung Care+ Insurance in 2025?
+              Why Choose Samsung Care+ Insurance?
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              With smartphone repair costs reaching record highs in 2025, Samsung Care+ offers the most comprehensive device protection plan 
+              With smartphone repair costs reaching record highs, Samsung Care+ offers the most comprehensive device protection plan 
               for Galaxy phones and tablets. Save hundreds on repairs, replacements, and technical support with Samsung's official insurance program.
             </p>
             <div className="grid gap-4 md:grid-cols-3">
@@ -141,7 +141,7 @@ const SamsungCarePlus = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <DollarSign className="h-6 w-6 text-primary" />
-                  Insurance Cost Breakdown 2025
+                  Insurance Cost Breakdown
                 </CardTitle>
               </CardHeader>
               <CardContent>

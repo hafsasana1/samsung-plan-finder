@@ -30,7 +30,7 @@ const Index = () => {
               >
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
                   <Shield className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">Samsung Device Protection 2025</span>
+                  <span className="text-sm font-medium text-primary">Samsung Device Protection</span>
                 </div>
                 
                 <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-6xl">
@@ -67,7 +67,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center gap-2 justify-center">
                     <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-muted-foreground">2025 pricing & deductible data</span>
+                    <span className="text-muted-foreground">Latest pricing & deductible data</span>
                   </div>
                 </div>
               </motion.div>
@@ -91,7 +91,7 @@ const Index = () => {
               className="mx-auto max-w-6xl"
             >
               <h2 className="mb-4 text-center text-4xl font-bold text-foreground">
-                Samsung Device Insurance Costs 2025: What You'll Actually Pay
+                Samsung Device Insurance Costs: What You'll Actually Pay
               </h2>
               <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
                 Understanding the true cost of smartphone insurance requires analyzing monthly premiums, repair deductibles, 
@@ -242,7 +242,7 @@ const Index = () => {
                   </table>
                 </div>
                 <p className="text-xs text-muted-foreground mt-4">
-                  *Analysis based on 2025 pricing for Galaxy S24 Ultra with one screen repair claim. Samsung Care+ offers lowest total cost of ownership.
+                  *Analysis based on current pricing for Galaxy S24 Ultra with one screen repair claim. Samsung Care+ offers lowest total cost of ownership.
                 </p>
               </div>
             </motion.div>
@@ -317,7 +317,7 @@ const Index = () => {
               className="mx-auto max-w-4xl"
             >
               <h2 className="mb-6 text-center text-3xl font-bold text-foreground">
-                Understanding Samsung Galaxy Device Protection Plans in 2025
+                Understanding Samsung Galaxy Device Protection Plans
               </h2>
               
               <div className="space-y-6 text-muted-foreground mb-8">
@@ -343,7 +343,7 @@ const Index = () => {
                 </p>
 
                 <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
-                  <h3 className="font-bold text-foreground text-xl mb-3">Key Insurance Decision Factors for 2025</h3>
+                  <h3 className="font-bold text-foreground text-xl mb-3">Key Insurance Decision Factors</h3>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -406,7 +406,7 @@ const Index = () => {
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1" data-testid="faq-how-much-samsung-care">
                     <AccordionTrigger className="text-left text-lg">
-                      How much does Samsung Care+ cost in 2025?
+                      How much does Samsung Care+ cost?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground text-base">
                       Samsung Care+ pricing varies by device model: Galaxy S24 Ultra costs $11.99/month ($287.76 for 24 months), 
@@ -433,7 +433,7 @@ const Index = () => {
                       What are Samsung Care+ deductible amounts for repairs?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground text-base">
-                      Samsung Care+ 2025 deductibles: Screen repairs $29 (budget devices) to $99 (Z Fold series). Back glass and general damage 
+                      Samsung Care+ deductibles: Screen repairs $29 (budget devices) to $99 (Z Fold series). Back glass and general damage 
                       $99-149. Full device replacements $99-249 depending on model value. Theft/loss claims require $249 deductible plus police report. 
                       These are 60-80% lower than carrier insurance deductibles ($99-249) and dramatically cheaper than out-of-pocket repairs 
                       ($350-600). Battery replacements are covered free when capacity drops below 80%.
@@ -442,7 +442,7 @@ const Index = () => {
 
                   <AccordionItem value="item-4" data-testid="faq-samsung-vs-carrier">
                     <AccordionTrigger className="text-left text-lg">
-                      Samsung Care+ vs carrier insurance: which is better in 2025?
+                      Samsung Care+ vs carrier insurance: which is better?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground text-base">
                       Samsung Care+ typically offers better value: lower deductibles ($29 screens vs $99-199 carrier), faster replacement (same-day vs 2-3 days), 
@@ -481,7 +481,7 @@ const Index = () => {
                       How much does Samsung screen replacement cost without insurance?
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground text-base">
-                      Out-of-pocket Samsung screen replacement costs in 2025: Galaxy S24 Ultra $450-500, S24+ $380-420, S24 $350-380, Z Fold 6 $550-600 
+                      Out-of-pocket Samsung screen replacement costs: Galaxy S24 Ultra $450-500, S24+ $380-420, S24 $350-380, Z Fold 6 $550-600 
                       (main display), Z Flip 6 $300-350. These prices reflect official Samsung repair centers; third-party shops may charge less but void 
                       warranty. Additional costs: back glass $200-280, battery $100-150, charging port $80-120. With Samsung Care+ $29 screen deductible, 
                       you save $320-470 per repair. Break-even analysis: insurance pays for itself after one major repair within 24-month coverage period.

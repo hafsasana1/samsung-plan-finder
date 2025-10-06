@@ -111,7 +111,7 @@ const Recommendation = () => {
                 <div className="flex-1">
                   <h3 className="font-bold text-foreground mb-3 text-lg">Insurance Cost-Benefit Analysis</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Based on 2025 repair cost data, {quizData.device} repairs average $350-550 for screen damage and 
+                    Based on current repair cost data, {quizData.device} repairs average $350-550 for screen damage and 
                     $450-750 for water damage. With Samsung Care+, your total out-of-pocket costs are significantly reduced.
                   </p>
                   <div className="grid gap-3 sm:grid-cols-2">
@@ -170,12 +170,12 @@ const Recommendation = () => {
             <div className="mb-8 rounded-xl bg-muted/50 border border-border p-6">
               <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
                 <Award className="h-5 w-5 text-primary" />
-                2025 Expert Insurance Insights
+                Expert Insurance Insights
               </h3>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <p>
                   <strong className="text-foreground">Repair Cost Trends:</strong> Samsung flagship device repair costs 
-                  increased 18% in 2025 due to advanced displays and components. A single screen replacement can cost 
+                  have increased due to advanced displays and components. A single screen replacement can cost 
                   40-50% of the device's original value.
                 </p>
                 <p>
@@ -185,7 +185,7 @@ const Recommendation = () => {
                 </p>
                 <p>
                   <strong className="text-foreground">Coverage Gaps:</strong> Manufacturer warranties don't cover accidental 
-                  damage, liquid exposure, or theft. These account for 85% of all device protection claims in 2025.
+                  damage, liquid exposure, or theft. These account for 85% of all device protection claims.
                 </p>
               </div>
             </div>

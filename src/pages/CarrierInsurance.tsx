@@ -50,7 +50,7 @@ const CarrierInsurance = () => {
               {quizData.carrier} Device Protection Insurance
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Carrier-provided mobile phone insurance with bundled billing, network-exclusive benefits, and comprehensive device coverage for 2025
+              Carrier-provided mobile phone insurance with bundled billing, network-exclusive benefits, and comprehensive device coverage
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const CarrierInsurance = () => {
           <div className="mb-8 rounded-xl bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border border-primary/30 p-8 shadow-xl">
             <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center gap-3">
               <Shield className="h-8 w-8 text-primary" />
-              Carrier Insurance Plans 2025 Overview
+              Carrier Insurance Plans Overview
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               Mobile carrier insurance plans like {quizData.carrier} Device Protection offer convenient billing through your monthly phone bill, 

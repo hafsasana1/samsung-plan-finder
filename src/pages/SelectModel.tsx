@@ -92,7 +92,7 @@ const SelectModel = () => {
                 className="rounded-xl bg-gradient-card border border-secondary/20 p-5 shadow-card"
               >
                 <TrendingUp className="h-8 w-8 text-secondary mb-2" />
-                <h3 className="font-semibold text-foreground mb-1">2025 Rates</h3>
+                <h3 className="font-semibold text-foreground mb-1">Current Rates</h3>
                 <p className="text-sm text-muted-foreground">
                   Updated insurance rates for Galaxy S24 Ultra, Z Fold6, and all current models
                 </p>
@@ -105,7 +105,7 @@ const SelectModel = () => {
                   <span className="text-2xl">💡</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">Expert Insurance Tip for 2025</h3>
+                  <h3 className="font-bold text-foreground mb-2">Expert Insurance Tip</h3>
                   <p className="text-sm text-muted-foreground mb-2">
                     Flagship phones like the Galaxy S24 Ultra, Z Fold6, and Z Flip6 qualify for extended Samsung Care+ with Theft & Loss protection. 
                     This premium coverage includes same-day device replacement, accidental damage protection, and mechanical breakdown coverage.
@@ -169,7 +169,7 @@ const SelectModel = () => {
 
             {/* Additional High CPC Content */}
             <div className="mb-8 rounded-xl bg-muted/50 border border-border p-6">
-              <h3 className="font-bold text-foreground mb-3">Why Device Insurance Matters in 2025</h3>
+              <h3 className="font-bold text-foreground mb-3">Why Device Insurance Matters</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>
                   <strong className="text-foreground">Screen Repairs:</strong> Samsung Galaxy flagship screens cost $200-$400 to repair. 

@@ -166,7 +166,7 @@ const SelectCarrier = () => {
               <div className="flex gap-3 items-start">
                 <Info className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">2025 Carrier Insurance Comparison</h3>
+                  <h3 className="font-bold text-foreground mb-2">Carrier Insurance Comparison</h3>
                   <div className="space-y-3 text-sm text-muted-foreground">
                     <div className="bg-card/70 rounded-lg p-4 border border-border">
                       <p className="font-semibold text-foreground mb-1">Verizon Total Mobile Protection</p>

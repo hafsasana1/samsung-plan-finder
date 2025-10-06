@@ -38,7 +38,7 @@ const AsurionInsurance = () => {
               <Shield className="h-12 w-12 text-primary-foreground" />
             </motion.div>
             <h1 className="mb-3 text-5xl font-bold text-foreground bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent" data-testid="heading-asurion">
-              Asurion Device Protection Insurance 2025
+              Asurion Device Protection Insurance
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Leading third-party mobile device insurance provider with next-day replacement, multi-device coverage, and comprehensive smartphone protection plans
@@ -71,7 +71,7 @@ const AsurionInsurance = () => {
           <div className="mb-8 rounded-xl bg-gradient-to-br from-accent/10 via-primary/10 to-secondary/10 border border-accent/30 p-8 shadow-xl">
             <h2 className="text-3xl font-bold text-foreground mb-4 flex items-center gap-3">
               <TrendingUp className="h-8 w-8 text-accent" />
-              Asurion Mobile Insurance Coverage 2025
+              Asurion Mobile Insurance Coverage
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               Asurion is America's largest device protection provider, serving over 300 million customers worldwide. With competitive pricing, 
@@ -142,7 +142,7 @@ const AsurionInsurance = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <DollarSign className="h-6 w-6 text-accent" />
-                  Asurion Pricing Structure 2025
+                  Asurion Pricing Structure
                 </CardTitle>
               </CardHeader>
               <CardContent>

@@ -127,9 +127,9 @@ const ComparePlans = () => {
               <div className="flex gap-4 items-start">
                 <TrendingUp className="h-10 w-10 text-primary flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">2025 Insurance Pricing Trends</h3>
+                  <h3 className="font-bold text-foreground mb-2">Insurance Pricing Trends</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Device protection costs have increased 12% in 2025 due to rising repair costs. Premium devices like the 
+                    Device protection costs have increased due to rising repair costs. Premium devices like the 
                     Galaxy S24 Ultra now cost $350-450 for screen replacement without insurance. Comprehensive coverage 
                     with low deductibles can save you hundreds on just one claim.
                   </p>

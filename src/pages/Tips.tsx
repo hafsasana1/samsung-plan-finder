@@ -31,7 +31,7 @@ const Tips = () => {
                 <BookOpen className="h-8 w-8 text-primary" />
               </div>
               <h1 className="mb-4 text-5xl font-bold text-foreground">
-                Samsung Device Insurance Guide 2025
+                Samsung Device Insurance Guide
               </h1>
               <p className="text-xl text-muted-foreground">
                 Complete guide to protecting your Galaxy smartphone: insurance plans, deductibles, coverage options, and money-saving tips
@@ -48,12 +48,12 @@ const Tips = () => {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <Shield className="h-8 w-8 text-primary" />
-                Is Samsung Device Insurance Worth It? Complete 2025 Analysis
+                Is Samsung Device Insurance Worth It? Complete Analysis
               </h2>
               
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mb-8">
                 <p className="text-lg text-muted-foreground mb-4">
-                  With flagship Samsung Galaxy devices costing $800-$1,400 in 2025, and average screen repair costs reaching $350-450, 
+                  With flagship Samsung Galaxy devices costing $800-$1,400, and average screen repair costs reaching $350-450, 
                   device insurance has become essential for protecting your investment. This comprehensive guide analyzes whether Samsung Care+, 
                   carrier insurance, or third-party protection plans offer the best value for your specific needs.
                 </p>
@@ -73,7 +73,7 @@ const Tips = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Understanding Samsung Insurance Options in 2025</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Understanding Samsung Insurance Options</h3>
               <p className="text-muted-foreground mb-6">
                 Samsung Galaxy owners have three primary insurance options: official Samsung Care+ protection, carrier-provided insurance 
                 (Verizon Mobile Protect, AT&T Protect, T-Mobile Protection 360), and third-party providers like Asurion or SquareTrade. 
@@ -142,7 +142,7 @@ const Tips = () => {
 
               <AdSlot id="tips-middle-1-ad" className="mb-8" />
 
-              <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Samsung Care+ vs Carrier Insurance: 2025 Cost Comparison</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Samsung Care+ vs Carrier Insurance: Cost Comparison</h3>
               <p className="text-muted-foreground mb-6">
                 Understanding the true cost of device insurance requires analyzing monthly premiums, deductibles per claim, coverage limits, 
                 and potential out-of-pocket expenses. Here's a comprehensive breakdown of what you'll actually pay with each insurance option:
@@ -316,7 +316,7 @@ const Tips = () => {
               </p>
 
               <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 mb-8 border border-primary/20">
-                <h4 className="font-bold text-foreground text-xl mb-6">Samsung Care+ Claim Filing Process (2025)</h4>
+                <h4 className="font-bold text-foreground text-xl mb-6">Samsung Care+ Claim Filing Process</h4>
                 <div className="grid gap-4 md:grid-cols-4 mb-6">
                   <div className="text-center">
                     <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-3">
@@ -391,7 +391,7 @@ const Tips = () => {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1" data-testid="faq-samsung-care-worth">
                   <AccordionTrigger className="text-left">
-                    Is Samsung Care+ worth it for Galaxy S24 Ultra in 2025?
+                    Is Samsung Care+ worth it for Galaxy S24 Ultra?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     Yes, for most S24 Ultra owners. With screen replacement costs at $450+ and back glass repairs at $280, a single claim justifies the $287 annual premium. 
@@ -401,7 +401,7 @@ const Tips = () => {
                 </AccordionItem>
                 <AccordionItem value="item-2" data-testid="faq-deductible-cost">
                   <AccordionTrigger className="text-left">
-                    How much are Samsung Care+ deductibles in 2025?
+                    How much are Samsung Care+ deductibles?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     Samsung Care+ deductibles vary by device and damage type: Screen repairs cost $29 (Galaxy A series) to $99 (Z Fold). 

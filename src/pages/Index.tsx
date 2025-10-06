@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/accordion";
 
 const Index = () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -24,9 +26,9 @@ const Index = () => {
           <div className="container">
             <div className="mx-auto max-w-4xl text-center">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
               >
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
                   <Shield className="h-4 w-4 text-primary" />
@@ -66,12 +68,12 @@ const Index = () => {
         </div>
 
         {/* Insurance Cost Overview */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
               viewport={{ once: true }}
               className="mx-auto max-w-6xl"
             >
@@ -240,12 +242,12 @@ const Index = () => {
         </div>
 
         {/* Features Section */}
-        <section className="py-16">
+        <section className="py-12 md:py-16">
           <div className="container">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
               viewport={{ once: true }}
               className="mx-auto max-w-4xl"
             >
@@ -292,12 +294,12 @@ const Index = () => {
         </section>
 
         {/* Info Section */}
-        <section className="bg-muted/30 py-16">
+        <section className="bg-muted/30 py-12 md:py-16">
           <div className="container">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
               viewport={{ once: true }}
               className="mx-auto max-w-4xl"
             >
@@ -367,13 +369,13 @@ const Index = () => {
         </div>
 
         {/* FAQ Section - People Also Ask */}
-        <section className="py-16">
+        <section className="py-12 md:py-16">
           <div className="container">
             <div className="mx-auto max-w-4xl">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={prefersReducedMotion ? {} : { opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3 }}
                 viewport={{ once: true }}
               >
                 <div className="text-center mb-12">

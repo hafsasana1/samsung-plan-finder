@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface AdSlotProps {
   id: string;
@@ -7,18 +7,53 @@ interface AdSlotProps {
 }
 
 const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
+  const adRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [adLoaded, setAdLoaded] = useState(false);
+
   useEffect(() => {
-    try {
-      const adsbygoogle = (window as any).adsbygoogle || [];
-      if (adsbygoogle.loaded !== undefined) {
-        adsbygoogle.push({});
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isVisible) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        rootMargin: "100px",
+        threshold: 0.01
       }
-    } catch (err) {
-      if (err instanceof Error && !err.message.includes("already have ads")) {
-        console.error("AdSense error:", err);
-      }
+    );
+
+    if (adRef.current) {
+      observer.observe(adRef.current);
     }
-  }, []);
+
+    return () => {
+      if (adRef.current) {
+        observer.unobserve(adRef.current);
+      }
+    };
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (isVisible && !adLoaded) {
+      const timer = setTimeout(() => {
+        try {
+          const adsbygoogle = (window as any).adsbygoogle || [];
+          adsbygoogle.push({});
+          setAdLoaded(true);
+        } catch (err) {
+          if (err instanceof Error && !err.message.includes("already have ads")) {
+            console.error("AdSense error:", err);
+          }
+        }
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, adLoaded]);
 
   const isHeaderAd = size === "header" || id.includes("top-ad");
   const isMediumAd = size === "medium";
@@ -26,6 +61,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
   if (isHeaderAd) {
     return (
       <div 
+        ref={adRef}
         id={id}
         className={`ad-slot w-full flex items-center justify-center py-4 ${className}`}
         role="complementary"
@@ -38,6 +74,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
             data-ad-client="ca-pub-3633046559958303"
             data-ad-slot="970250"
             data-tag-src="gamtg"
+            data-adsbygoogle-status={isVisible ? "filled" : ""}
           />
         </div>
       </div>
@@ -47,6 +84,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
   if (isMediumAd) {
     return (
       <div 
+        ref={adRef}
         id={id}
         className={`ad-slot w-full flex items-center justify-center py-4 ${className}`}
         role="complementary"
@@ -59,6 +97,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
             data-ad-client="ca-pub-3633046559958303"
             data-ad-slot="300250"
             data-tag-src="gamtg"
+            data-adsbygoogle-status={isVisible ? "filled" : ""}
           />
         </div>
       </div>
@@ -67,6 +106,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
 
   return (
     <div 
+      ref={adRef}
       id={id}
       className={`ad-slot w-full flex items-center justify-center py-4 ${className}`}
       role="complementary"
@@ -79,6 +119,7 @@ const AdSlot = ({ id, className = "", size = "standard" }: AdSlotProps) => {
           data-ad-client="ca-pub-3633046559958303"
           data-ad-slot="336280"
           data-tag-src="gamtg"
+          data-adsbygoogle-status={isVisible ? "filled" : ""}
         />
       </div>
     </div>

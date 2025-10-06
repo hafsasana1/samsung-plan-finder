@@ -39,6 +39,18 @@ const Quote = () => {
     navigate("/");
   };
 
+  const handleProviderClick = (provider: typeof providers[0]) => {
+    const routes: Record<string, string> = {
+      "Samsung Care+": "/samsung-care-plus",
+      "Asurion": "/asurion-insurance",
+    };
+    
+    const carrierRoute = "/carrier-insurance";
+    
+    const route = routes[provider.name] || carrierRoute;
+    navigate(route, { state: { provider: { ...provider, duration: quizData.duration } } });
+  };
+
   return (
     <QuizLayout currentStep={6} totalSteps={6}>
       <div className="container py-12">
@@ -126,7 +138,12 @@ const Quote = () => {
                     </div>
                   </div>
                   <div className="mt-4">
-                    <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity" size="lg">
+                    <Button 
+                      className="w-full bg-gradient-primary hover:opacity-90 transition-opacity" 
+                      size="lg"
+                      onClick={() => handleProviderClick(provider)}
+                      data-testid={`button-get-${provider.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    >
                       Get {provider.name} →
                     </Button>
                   </div>

@@ -1,7 +1,27 @@
 import { Link } from "react-router-dom";
 import { Shield, ExternalLink } from "lucide-react";
+import { useEffect, useRef } from "react";
+
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
 
 const Footer = () => {
+  const adInitialized = useRef(false);
+
+  useEffect(() => {
+    if (!adInitialized.current) {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        adInitialized.current = true;
+      } catch (err) {
+        console.error('AdSense error:', err);
+      }
+    }
+  }, []);
+
   return (
     <footer className="relative border-t border-border/50 bg-gradient-to-br from-purple-900/10 via-pink-900/10 to-orange-900/10 mt-auto overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 animate-pulse"></div>
@@ -71,6 +91,17 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+        </div>
+        
+        <div className="mt-12 flex justify-center items-center">
+          <div className="footer-area-ads">
+            <ins className="adsbygoogle"
+              style={{ display: 'inline-block', width: '728px', height: '90px' }}
+              data-ad-client="ca-pub-3633046559958303"
+              data-ad-slot="test72890"
+              data-tag-src="gamtg">
+            </ins>
           </div>
         </div>
         

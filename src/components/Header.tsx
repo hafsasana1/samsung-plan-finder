@@ -15,14 +15,23 @@ const Header = () => {
           </div>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-6">
-          <Link to="/tips" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-            Tips & Guides
-          </Link>
-          <Link to="/about" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-            About
-          </Link>
-        </nav>
+      <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" aria-label="Home">
+          Home
+        </Link>
+        <Link to="/tips" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" aria-label="Tips & Guides">
+          Tips & Guides
+        </Link>
+        <Link to="/compare" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" aria-label="Compare Plans">
+          Compare
+        </Link>
+        <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" aria-label="About">
+          About
+        </Link>
+        <Link to="/contact" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" aria-label="Contact">
+          Contact
+        </Link>
+      </nav>
       </div>
     </header>
   );

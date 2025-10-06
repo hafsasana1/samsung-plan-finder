@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -64,7 +67,9 @@ export default {
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-accent': 'var(--gradient-accent)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-card': 'var(--gradient-card)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',

@@ -69,6 +69,30 @@ const ComparePlans = () => {
     navigate("/duration");
   };
 
+  const handleSelectPlan = (plan: typeof plans[0]) => {
+    const routes: Record<string, string> = {
+      "Samsung Care+": "/samsung-care-plus",
+      "Asurion Protection": "/asurion-insurance",
+    };
+    
+    const carrierRoute = "/carrier-insurance";
+    
+    const route = routes[plan.name] || carrierRoute;
+    const monthlyPrice = parseFloat(plan.price.replace('$', ''));
+    const total = (monthlyPrice * quizData.duration).toFixed(2);
+    
+    navigate(route, { 
+      state: { 
+        provider: { 
+          name: plan.name,
+          monthly: plan.price,
+          total: total,
+          duration: quizData.duration 
+        } 
+      } 
+    });
+  };
+
   return (
     <QuizLayout currentStep={4}>
       <div className="container py-12">
@@ -194,6 +218,8 @@ const ComparePlans = () => {
                     variant={plan.isBestValue ? "default" : "outline"}
                     className={`w-full text-base ${plan.isBestValue ? "bg-gradient-primary hover:opacity-90 shadow-md" : ""}`}
                     size="lg"
+                    onClick={() => handleSelectPlan(plan)}
+                    data-testid={`button-select-${plan.name.toLowerCase().replace(/\s+/g, '-')}`}
                   >
                     Select {plan.name}
                   </Button>

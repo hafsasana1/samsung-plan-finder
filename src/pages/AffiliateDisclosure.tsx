@@ -52,6 +52,8 @@ const AffiliateDisclosure = () => {
                 helps us maintain and improve our free calculator service.
               </p>
 
+              <AdSlot id="affiliate-middle-ad" size="medium" className="my-8" />
+
               <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">No Cost to You</h2>
               <p className="mb-4">
                 Using our affiliate links does not cost you anything extra. The price you pay for insurance is the 

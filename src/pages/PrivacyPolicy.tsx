@@ -56,6 +56,8 @@ const PrivacyPolicy = () => {
                 transmission over the Internet is 100% secure.
               </p>
 
+              <AdSlot id="privacy-middle-ad" size="medium" className="my-8" />
+
               <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">Contact Us</h2>
               <p className="mb-4">
                 If you have questions about this Privacy Policy, please contact us through our contact page.

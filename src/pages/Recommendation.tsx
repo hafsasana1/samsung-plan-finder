@@ -164,7 +164,7 @@ const Recommendation = () => {
               </motion.div>
             </div>
 
-            <AdSlot id="recommendation-middle-ad" className="mb-8" />
+            <AdSlot id="recommendation-middle-ad" size="medium" className="mb-8" />
 
             {/* Expert Insights */}
             <div className="mb-8 rounded-xl bg-muted/50 border border-border p-6">

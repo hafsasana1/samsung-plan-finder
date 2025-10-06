@@ -60,6 +60,8 @@ const Terms = () => {
                 constitutes acceptance of the modified terms.
               </p>
 
+              <AdSlot id="terms-middle-ad" size="medium" className="my-8" />
+
               <h2 className="text-2xl font-bold text-foreground mb-4 mt-8">Contact</h2>
               <p className="mb-4">
                 For questions about these Terms of Service, please contact us through our contact page.

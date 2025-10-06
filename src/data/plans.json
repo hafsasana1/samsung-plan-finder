@@ -1,0 +1,316 @@
+{
+  "devices": [
+    "Galaxy S24 Ultra",
+    "Galaxy S24+",
+    "Galaxy S24",
+    "Galaxy S23 Ultra",
+    "Galaxy S23+",
+    "Galaxy S23",
+    "Galaxy Z Fold5",
+    "Galaxy Z Fold4",
+    "Galaxy Z Flip5",
+    "Galaxy Z Flip4",
+    "Galaxy A55",
+    "Galaxy A54",
+    "Galaxy A35",
+    "Galaxy A34"
+  ],
+  "countries": [
+    { "name": "USA", "code": "US", "flag": "🇺🇸" },
+    { "name": "UK", "code": "GB", "flag": "🇬🇧" },
+    { "name": "Canada", "code": "CA", "flag": "🇨🇦" },
+    { "name": "Australia", "code": "AU", "flag": "🇦🇺" }
+  ],
+  "carriers": {
+    "US": ["AT&T", "Verizon", "T-Mobile", "Unlocked"],
+    "GB": ["EE", "Vodafone", "O2", "Unlocked"],
+    "CA": ["Rogers", "Bell", "Telus", "Unlocked"],
+    "AU": ["Telstra", "Optus", "Vodafone", "Unlocked"]
+  },
+  "plans": {
+    "Galaxy S24 Ultra": {
+      "samsungCare": {
+        "12": "$11.99",
+        "24": "$10.99",
+        "36": "$9.99"
+      },
+      "asurion": {
+        "12": "$13.50",
+        "24": "$12.50",
+        "36": "$11.50"
+      },
+      "carrier": {
+        "12": "$12.99",
+        "24": "$11.99",
+        "36": "$10.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy S24+": {
+      "samsungCare": {
+        "12": "$10.99",
+        "24": "$9.99",
+        "36": "$8.99"
+      },
+      "asurion": {
+        "12": "$12.50",
+        "24": "$11.50",
+        "36": "$10.50"
+      },
+      "carrier": {
+        "12": "$11.99",
+        "24": "$10.99",
+        "36": "$9.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy S24": {
+      "samsungCare": {
+        "12": "$9.99",
+        "24": "$8.99",
+        "36": "$7.99"
+      },
+      "asurion": {
+        "12": "$11.50",
+        "24": "$10.50",
+        "36": "$9.50"
+      },
+      "carrier": {
+        "12": "$10.99",
+        "24": "$9.99",
+        "36": "$8.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy S23 Ultra": {
+      "samsungCare": {
+        "12": "$10.99",
+        "24": "$9.99",
+        "36": "$8.99"
+      },
+      "asurion": {
+        "12": "$12.50",
+        "24": "$11.50",
+        "36": "$10.50"
+      },
+      "carrier": {
+        "12": "$11.99",
+        "24": "$10.99",
+        "36": "$9.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy S23+": {
+      "samsungCare": {
+        "12": "$9.99",
+        "24": "$8.99",
+        "36": "$7.99"
+      },
+      "asurion": {
+        "12": "$11.50",
+        "24": "$10.50",
+        "36": "$9.50"
+      },
+      "carrier": {
+        "12": "$10.99",
+        "24": "$9.99",
+        "36": "$8.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy S23": {
+      "samsungCare": {
+        "12": "$8.99",
+        "24": "$7.99",
+        "36": "$6.99"
+      },
+      "asurion": {
+        "12": "$10.50",
+        "24": "$9.50",
+        "36": "$8.50"
+      },
+      "carrier": {
+        "12": "$9.99",
+        "24": "$8.99",
+        "36": "$7.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy Z Fold5": {
+      "samsungCare": {
+        "12": "$15.99",
+        "24": "$14.99",
+        "36": "$13.99"
+      },
+      "asurion": {
+        "12": "$17.25",
+        "24": "$16.25",
+        "36": "$15.25"
+      },
+      "carrier": {
+        "12": "$16.99",
+        "24": "$15.99",
+        "36": "$14.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy Z Fold4": {
+      "samsungCare": {
+        "12": "$14.99",
+        "24": "$13.99",
+        "36": "$12.99"
+      },
+      "asurion": {
+        "12": "$16.25",
+        "24": "$15.25",
+        "36": "$14.25"
+      },
+      "carrier": {
+        "12": "$15.99",
+        "24": "$14.99",
+        "36": "$13.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy Z Flip5": {
+      "samsungCare": {
+        "12": "$12.99",
+        "24": "$11.99",
+        "36": "$10.99"
+      },
+      "asurion": {
+        "12": "$14.25",
+        "24": "$13.25",
+        "36": "$12.25"
+      },
+      "carrier": {
+        "12": "$13.99",
+        "24": "$12.99",
+        "36": "$11.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy Z Flip4": {
+      "samsungCare": {
+        "12": "$11.99",
+        "24": "$10.99",
+        "36": "$9.99"
+      },
+      "asurion": {
+        "12": "$13.25",
+        "24": "$12.25",
+        "36": "$11.25"
+      },
+      "carrier": {
+        "12": "$12.99",
+        "24": "$11.99",
+        "36": "$10.99"
+      },
+      "type": "flagship"
+    },
+    "Galaxy A55": {
+      "samsungCare": {
+        "12": "$6.99",
+        "24": "$5.99",
+        "36": "$4.99"
+      },
+      "asurion": {
+        "12": "$8.50",
+        "24": "$7.50",
+        "36": "$6.50"
+      },
+      "carrier": {
+        "12": "$7.99",
+        "24": "$6.99",
+        "36": "$5.99"
+      },
+      "type": "midrange"
+    },
+    "Galaxy A54": {
+      "samsungCare": {
+        "12": "$6.99",
+        "24": "$5.99",
+        "36": "$4.99"
+      },
+      "asurion": {
+        "12": "$8.50",
+        "24": "$7.50",
+        "36": "$6.50"
+      },
+      "carrier": {
+        "12": "$7.99",
+        "24": "$6.99",
+        "36": "$5.99"
+      },
+      "type": "midrange"
+    },
+    "Galaxy A35": {
+      "samsungCare": {
+        "12": "$5.99",
+        "24": "$4.99",
+        "36": "$3.99"
+      },
+      "asurion": {
+        "12": "$7.50",
+        "24": "$6.50",
+        "36": "$5.50"
+      },
+      "carrier": {
+        "12": "$6.99",
+        "24": "$5.99",
+        "36": "$4.99"
+      },
+      "type": "budget"
+    },
+    "Galaxy A34": {
+      "samsungCare": {
+        "12": "$5.99",
+        "24": "$4.99",
+        "36": "$3.99"
+      },
+      "asurion": {
+        "12": "$7.50",
+        "24": "$6.50",
+        "36": "$5.50"
+      },
+      "carrier": {
+        "12": "$6.99",
+        "24": "$5.99",
+        "36": "$4.99"
+      },
+      "type": "budget"
+    }
+  },
+  "recommendations": {
+    "flagship": {
+      "title": "Highly Recommended",
+      "description": "Your flagship device is a significant investment. Samsung Care+ offers comprehensive protection with screen repair, replacement coverage, and 24/7 expert support.",
+      "benefits": [
+        "Premium devices are costly to repair",
+        "Extended warranty protection",
+        "Fast same-day replacement options",
+        "Coverage for accidental damage"
+      ]
+    },
+    "midrange": {
+      "title": "Worth Considering",
+      "description": "Mid-range devices offer great value, and protection can be beneficial if you're accident-prone or want peace of mind.",
+      "benefits": [
+        "Reasonable repair costs",
+        "Protection against accidents",
+        "Good value for frequent users",
+        "Lower deductibles than flagship"
+      ]
+    },
+    "budget": {
+      "title": "Optional Coverage",
+      "description": "Budget devices have lower replacement costs. Insurance may not be cost-effective unless you're prone to damage.",
+      "benefits": [
+        "Lower premium costs",
+        "Basic protection available",
+        "Consider self-insurance",
+        "Evaluate usage patterns"
+      ]
+    }
+  }
+}

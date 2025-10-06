@@ -1,22 +1,35 @@
+import { useEffect } from "react";
+
 interface AdSlotProps {
   id: string;
   className?: string;
 }
 
 const AdSlot = ({ id, className = "" }: AdSlotProps) => {
+  useEffect(() => {
+    try {
+      const adsbygoogle = (window as any).adsbygoogle || [];
+      adsbygoogle.push({});
+    } catch (err) {
+      console.error("AdSense error:", err);
+    }
+  }, []);
+
   return (
     <div 
       id={id}
-      className={`ad-slot min-h-[280px] bg-gradient-to-br from-muted/30 to-muted/10 border-2 border-dashed border-primary/20 rounded-xl flex items-center justify-center transition-all hover:border-primary/40 ${className}`}
+      className={`ad-slot w-full flex items-center justify-center py-4 ${className}`}
       role="complementary"
       aria-label="Advertisement"
     >
-      <div className="text-center p-6">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-3">
-          <span className="text-2xl">📢</span>
-        </div>
-        <p className="text-sm font-semibold text-foreground mb-1">Advertisement Space</p>
-        <p className="text-xs text-muted-foreground">High-visibility ad placement</p>
+      <div className="w-full max-w-[970px] overflow-hidden flex justify-center">
+        <ins 
+          className="adsbygoogle"
+          style={{ display: "inline-block", width: "970px", height: "250px", maxWidth: "100%" }}
+          data-ad-client="ca-pub-3633046559958303"
+          data-ad-slot="970250"
+          data-tag-src="gamtg"
+        />
       </div>
     </div>
   );

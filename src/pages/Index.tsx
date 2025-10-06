@@ -294,6 +294,11 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Medium Ad Slot */}
+        <div className="container py-8">
+          <AdSlot id="home-content-ad" size="medium" />
+        </div>
+
         {/* Info Section */}
         <section className="bg-muted/30 py-12 md:py-16">
           <div className="container">

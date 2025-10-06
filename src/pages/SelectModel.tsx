@@ -117,6 +117,8 @@ const SelectModel = () => {
               </div>
             </div>
 
+            <AdSlot id="model-content-ad" size="medium" className="mb-8" />
+
             <div className="mb-6">
               <label className="block text-sm font-semibold text-foreground mb-2">
                 Search for Your Device Model

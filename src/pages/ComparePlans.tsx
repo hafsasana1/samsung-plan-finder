@@ -151,6 +151,8 @@ const ComparePlans = () => {
               </div>
             </div>
 
+            <AdSlot id="compare-sidebar-ad" size="medium" className="mb-8" />
+
             <div className="mb-8 grid gap-6 lg:grid-cols-3">
               {plans.map((plan, index) => (
                 <motion.div

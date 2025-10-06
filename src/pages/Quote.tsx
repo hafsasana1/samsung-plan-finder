@@ -104,6 +104,8 @@ const Quote = () => {
               </div>
             </div>
 
+            <AdSlot id="quote-sidebar-ad" size="medium" className="mb-8" />
+
             <div className="mb-8 space-y-4">
               <h2 className="text-2xl font-bold text-foreground mb-4">Insurance Cost Comparison</h2>
               {providers.map((provider, index) => (

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FooterAds from "@/components/FooterAds";
 import AdSlot from "@/components/AdSlot";
 
 const Terms = () => {
@@ -68,6 +69,7 @@ const Terms = () => {
         </div>
       </main>
       
+      <FooterAds />
       <Footer />
     </div>
   );

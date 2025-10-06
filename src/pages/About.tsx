@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Shield, Users, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FooterAds from "@/components/FooterAds";
 import AdSlot from "@/components/AdSlot";
 
 const About = () => {
@@ -95,6 +96,7 @@ const About = () => {
         </div>
       </main>
       
+      <FooterAds />
       <Footer />
     </div>
   );

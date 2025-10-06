@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FooterAds from "@/components/FooterAds";
 import AdSlot from "@/components/AdSlot";
 
 const PrivacyPolicy = () => {
@@ -64,6 +65,7 @@ const PrivacyPolicy = () => {
         </div>
       </main>
       
+      <FooterAds />
       <Footer />
     </div>
   );

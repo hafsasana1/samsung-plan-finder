@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FooterAds from "@/components/FooterAds";
 import AdSlot from "@/components/AdSlot";
 import {
   Accordion,
@@ -531,6 +532,7 @@ const Index = () => {
         </section>
       </main>
       
+      <FooterAds />
       <Footer />
     </div>
   );

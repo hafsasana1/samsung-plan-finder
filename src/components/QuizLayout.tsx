@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import Footer from "./Footer";
+import FooterAds from "./FooterAds";
 import ProgressBar from "./ProgressBar";
 
 interface QuizLayoutProps {
@@ -48,6 +49,7 @@ const QuizLayout = ({
         </motion.div>
       </main>
       
+      <FooterAds />
       <Footer />
     </div>
   );
